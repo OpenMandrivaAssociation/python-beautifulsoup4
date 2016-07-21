@@ -25,6 +25,7 @@ that meet certain criteria.
   
 %install 
 PYTHONDONTWRITEBYTECODE= %__python setup.py install --root=%{buildroot} --record=FILE_LIST
+sed -i '/egg-info$/d' FILE_LIST
 
 %files -f FILE_LIST
 
