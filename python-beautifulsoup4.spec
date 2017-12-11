@@ -2,12 +2,12 @@
 
 Summary:	The Screen-Scraper's Friend
 Name:		python-beautifulsoup4
-Version:	4.5.3
+Version:	4.6.0
 Release:	1
 Group:		Development/Python
 License:	Python
 Url:		http://www.crummy.com/software/BeautifulSoup
-Source0:	http://www.crummy.com/software/BeautifulSoup/bs4/download/4.5/%{module}-%{version}.tar.gz
+Source0:	http://www.crummy.com/software/BeautifulSoup/bs4/download/%(echo %{version} |cut -d. -f1-2)/%{module}-%{version}.tar.gz
 BuildArch:	noarch
 BuildRequires:	python-setuptools
 BuildRequires:	python2-setuptools
@@ -59,9 +59,9 @@ cd ../python2
 %{__python2} setup.py install --root=%{buildroot}
 
 %files
-%{python_sitelib}/beautifulsoup4-4.5.3-py%{py_ver}.egg-info/*
+%{python_sitelib}/beautifulsoup4-%{version}-py%{py_ver}.egg-info/*
 %{python_sitelib}/bs4
 
 %files -n python2-beautifulsoup4
-%{python2_sitelib}/beautifulsoup4-4.5.3-py%{py2_ver}.egg-info/*
+%{python2_sitelib}/beautifulsoup4-%{version}-py%{py2_ver}.egg-info/*
 %{python2_sitelib}/bs4
