@@ -11,6 +11,7 @@ Source0:	http://www.crummy.com/software/BeautifulSoup/bs4/download/%(echo %{vers
 BuildArch:	noarch
 BuildRequires:	python-setuptools
 BuildRequires:	python-pkg-resources
+BuildRequires:	python2-pkg-resources
 BuildRequires:	python2-setuptools
 BuildRequires:	pkgconfig(python)
 BuildRequires:	pkgconfig(python3)
