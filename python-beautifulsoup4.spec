@@ -3,7 +3,7 @@
 Summary:	The Screen-Scraper's Friend
 Name:		python-beautifulsoup4
 Version:	4.6.3
-Release:	1
+Release:	2
 Group:		Development/Python
 License:	Python
 Url:		http://www.crummy.com/software/BeautifulSoup
