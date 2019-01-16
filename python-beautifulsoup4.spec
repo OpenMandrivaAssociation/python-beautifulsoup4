@@ -2,12 +2,12 @@
 
 Summary:	The Screen-Scraper's Friend
 Name:		python-beautifulsoup4
-Version:	4.6.3
-Release:	2
+Version:	4.7.1
+Release:	1
 Group:		Development/Python
 License:	Python
 Url:		http://www.crummy.com/software/BeautifulSoup
-Source0:	http://www.crummy.com/software/BeautifulSoup/bs4/download/%(echo %{version} |cut -d. -f1-2)/%{module}-%{version}.tar.gz
+Source0:	https://files.pythonhosted.org/packages/source/b/beautifulsoup4/beautifulsoup4-%{version}.tar.gz
 BuildArch:	noarch
 BuildRequires:	python-setuptools
 BuildRequires:	python-pkg-resources
@@ -46,24 +46,24 @@ cp -a python3 python2
 
 %build
 pushd python3
-python setup.py build
+%py_build
 popd
 
 pushd python2
-%{__python2} setup.py build
+python setup.py build
 popd
 
 %install
 cd python3
-%{__python} setup.py install --root=%{buildroot}
+python setup.py install --root=%{buildroot}
 
 cd ../python2
-%{__python2} setup.py install --root=%{buildroot}
+python setup.py install --root=%{buildroot}
 
 %files
-%{python_sitelib}/beautifulsoup4-%{version}-py%{py_ver}.egg-info/*
-%{python_sitelib}/bs4
+%{py_puresitedir}/beautifulsoup4-%{version}-py%{py_ver}.egg-info/*
+%{py_puresitedir}/bs4
 
 %files -n python2-beautifulsoup4
-%{python2_sitelib}/beautifulsoup4-%{version}-py%{py2_ver}.egg-info/*
-%{python2_sitelib}/bs4
+%{py_puresitedir}/beautifulsoup4-%{version}-py%{py2_ver}.egg-info/*
+%{py_puresitedir}/bs4
