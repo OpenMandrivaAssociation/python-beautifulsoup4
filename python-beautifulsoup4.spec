@@ -2,12 +2,12 @@
 
 Summary:	The Screen-Scraper's Friend
 Name:		python-beautifulsoup4
-Version:	4.6.3
+Version:	4.7.1
 Release:	2
 Group:		Development/Python
 License:	Python
 Url:		http://www.crummy.com/software/BeautifulSoup
-Source0:	http://www.crummy.com/software/BeautifulSoup/bs4/download/%(echo %{version} |cut -d. -f1-2)/%{module}-%{version}.tar.gz
+Source0:	https://files.pythonhosted.org/packages/80/f2/f6aca7f1b209bb9a7ef069d68813b091c8c3620642b568dac4eb0e507748/beautifulsoup4-4.7.1.tar.gz
 BuildArch:	noarch
 BuildRequires:	python-setuptools
 BuildRequires:	python-pkg-resources
