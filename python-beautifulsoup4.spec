@@ -61,9 +61,9 @@ cd ../python2
 %{__python2} setup.py install --root=%{buildroot}
 
 %files
-%{python_sitelib}/beautifulsoup4-%{version}-py%{py_ver}.egg-info/*
+%{python_sitelib}/beautifulsoup4-%{version}-py%{py_ver}.egg-info
 %{python_sitelib}/bs4
 
 %files -n python2-beautifulsoup4
-%{python2_sitelib}/beautifulsoup4-%{version}-py%{py2_ver}.egg-info/*
+%{python2_sitelib}/beautifulsoup4-%{version}-py%{py2_ver}.egg-info
 %{python2_sitelib}/bs4
