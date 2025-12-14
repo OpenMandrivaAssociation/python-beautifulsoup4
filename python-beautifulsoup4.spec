@@ -11,6 +11,7 @@ Source0:	https://files.pythonhosted.org/packages/source/b/beautifulsoup4/beautif
 BuildArch:	noarch
 BuildRequires:	python-setuptools
 BuildRequires:	python-pkg-resources
+BuildRequires:  python-hatchling
 BuildRequires:	pkgconfig(python)
 BuildSystem:    python
 
