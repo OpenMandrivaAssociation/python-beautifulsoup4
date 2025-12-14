@@ -25,5 +25,4 @@ original tag and its closing tag (if any). It's easy to extract Tags
 that meet certain criteria.
 
 %files
-%{python_sitelib}/beautifulsoup4-%{version}-py%{py_ver}.egg-info
 %{python_sitelib}/bs4
