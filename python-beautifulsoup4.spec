@@ -12,6 +12,7 @@ BuildArch:	noarch
 BuildRequires:	python-setuptools
 BuildRequires:	python-pkg-resources
 BuildRequires:  python-hatchling
+BuildRequires:  python-soupsieve
 BuildRequires:	pkgconfig(python)
 BuildSystem:    python
 
