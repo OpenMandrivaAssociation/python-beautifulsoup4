@@ -26,3 +26,4 @@ that meet certain criteria.
 
 %files
 %{python_sitelib}/bs4
+%{python_sitelib}/beautifulsoup4-%{version}.dist-info
