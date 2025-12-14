@@ -12,6 +12,7 @@ BuildArch:	noarch
 BuildRequires:	python-setuptools
 BuildRequires:	python-pkg-resources
 BuildRequires:	pkgconfig(python)
+BuildSystem:    python
 
 
 %description
@@ -21,19 +22,6 @@ corresponds to an HTML tag.  It knows about the HTML tag's attributes,
 and contains a representation of everything contained between the
 original tag and its closing tag (if any). It's easy to extract Tags
 that meet certain criteria.
-
-%description
-Beautiful Soup sits atop an HTML or XML parser, providing Pythonic
-idioms for iterating, searching, and modifying the parse tree.
-
-%prep
-%setup -qn %{module}-%{version}
-
-%build
-python setup.py build
-
-%install
-%{__python} setup.py install --root=%{buildroot}
 
 %files
 %{python_sitelib}/beautifulsoup4-%{version}-py%{py_ver}.egg-info
