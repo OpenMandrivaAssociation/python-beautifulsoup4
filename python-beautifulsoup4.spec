@@ -9,11 +9,9 @@ License:	Python
 Url:		https://www.crummy.com/software/BeautifulSoup
 Source0:	https://files.pythonhosted.org/packages/source/b/beautifulsoup4/beautifulsoup4-%{version}.tar.gz
 BuildArch:	noarch
-BuildRequires:	python-setuptools
-BuildRequires:	python-pkg-resources
-BuildRequires:  python-hatchling
-BuildRequires:  python-soupsieve
 BuildRequires:	pkgconfig(python)
+BuildRequires:	python%{pyver}dist(hatchling)
+BuildRequires:	python%{pyver}dist(pip)
 BuildSystem:    python
 
 
